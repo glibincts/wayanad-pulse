@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wayanad Today – Latest News, Tourism & Local Updates from Kerala</title>
+  <meta name="description" content="Wayanad Today is your go-to source for breaking news, tourism guides, wildlife updates, weather alerts, and cultural events from Wayanad, Kerala."/>
+  <meta name="keywords" content="Wayanad news, Wayanad today, Kerala latest news, Wayanad tourism, Wayanad weather, Wayanad wildlife, Chembra Peak, Edakkal Caves, Muthanga forest"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="author" content="Wayanad Today"/>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.wayanadtoday.in/"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Wayanad Today – Latest News, Tourism & Local Updates from Kerala"/>
+  <meta property="og:description" content="Your go-to source for breaking news, tourism guides, and wildlife updates from Wayanad, Kerala."/>
+  <meta property="og:image" content="./assets/images/wayanad_hero.png"/>
+  <meta property="og:url" content="https://www.wayanadtoday.in/"/>
+  <meta property="og:site_name" content="Wayanad Today"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Wayanad Today – Latest News & Tourism"/>
+  <meta name="twitter:description" content="Breaking news and tourism updates from God's Own Country."/>
+  <meta name="twitter:image" content="./assets/images/wayanad_hero.png"/>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    "name": "Wayanad Today",
+    "url": "https://www.wayanadtoday.in",
+    "description": "Latest news and updates from Wayanad, Kerala",
+    "logo": "https://www.wayanadtoday.in/assets/images/logo.png",
+    "sameAs": ["https://www.facebook.com/wayanadtoday","https://www.instagram.com/wayanadtoday"]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Breaking News Ticker -->
+  <div class="ticker-bar" aria-label="Breaking news ticker">
+    <span class="ticker-label"><i class="ri-flashlight-fill"></i> BREAKING</span>
+    <div class="ticker-wrap">
+      <div class="ticker-move" id="tickerContent">
+        <span>Landslide rehabilitation work in Mundakkai region progressing ahead of monsoon season &nbsp;•&nbsp;</span>
+        <span>CM Pinarayi Vijayan reviews Wayanad flood relief funds; Rs 500 crore package approved &nbsp;•&nbsp;</span>
+        <span>Yellow alert issued for Wayanad – Heavy rain expected this weekend, IMD warns &nbsp;•&nbsp;</span>
+        <span>Elephant herd crosses Muthanga highway; forest officials issue night travel advisory &nbsp;•&nbsp;</span>
+        <span>New ghat road alternative route gets environmental clearance, CM says work starts in June &nbsp;•&nbsp;</span>
+        <span>Chembra Peak trekking resumes with new eco-tourism guidelines effective from May 1st &nbsp;•&nbsp;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo" id="site-logo">
+        <div class="logo-icon"><i class="ri-leaf-fill"></i></div>
+        <div class="logo-text">Wayanad<span>Today</span></div>
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home"     class="nav-link" id="nav-home">Home</a></li>
+          <li><a href="#news"     class="nav-link" id="nav-news">Top Stories</a></li>
+          <li><a href="#destinations" class="nav-link" id="nav-dest">Destinations</a></li>
+          <li><a href="#weather"  class="nav-link" id="nav-weather">Weather</a></li>
+          <li><a href="#support"  class="nav-link" id="nav-support">Support</a></li>
+          <li><a href="#subscribe" class="nav-link nav-cta" id="nav-subscribe">
+            <i class="ri-notification-3-fill"></i> Get Alerts
+          </a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════ SIDE ADS (Wide Screens Only) ═══════════════════════════ -->
+  <aside class="side-ad side-ad-left">
+    <span>ADVERTISEMENT</span>
+    <div class="skyscraper-box">160x600 Skyscraper</div>
+  </aside>
+
+  <aside class="side-ad side-ad-right">
+    <span>ADVERTISEMENT</span>
+    <div class="skyscraper-box">160x600 Skyscraper</div>
+  </aside>
+
+  <main>
+
+    <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+    <section id="home" class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="./assets/images/wayanad_hero.png" alt="Scenic view of Wayanad tea estates" class="hero-img" fetchpriority="high"/>
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container hero-body">
+        <div class="hero-tag animate-fade-up" style="--delay:0.1s">
+          <i class="ri-map-pin-2-fill"></i> Wayanad, Kerala, India
+        </div>
+        <h1 class="hero-heading animate-fade-up" style="--delay:0.2s">
+          The <em>Heart</em> of<br/>God's Own Country
+        </h1>
+        <p class="hero-sub animate-fade-up" style="--delay:0.3s">
+          Known as <em>Vayal Nadu</em> (The Land of Paddy Fields), Wayanad is a verdant paradise nestled in the Western Ghats. Discover breaking news, tourism guides, and wildlife alerts from the misty hills.
+        </p>
+        <div class="hero-btns animate-fade-up" style="--delay:0.4s">
+          <a href="#news" class="btn btn-green" id="hero-read-btn">
+            <i class="ri-newspaper-line"></i> Read Top Stories
+          </a>
+          <a href="#subscribe" class="btn btn-ghost" id="hero-alert-btn">
+            <i class="ri-notification-3-line"></i> Get Free Alerts
+          </a>
+        </div>
+
+        <div class="hero-stats animate-fade-up" style="--delay:0.5s">
+          <div class="stat-pill"><i class="ri-user-3-line"></i> 50K+ Readers</div>
+          <div class="stat-pill"><i class="ri-article-line"></i> 200+ Stories/Month</div>
+          <div class="stat-pill"><i class="ri-time-line"></i> Updated Daily</div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <div class="scroll-dot"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ STATS STRIP ═══════════════════════════ -->
+    <section class="stats-strip" aria-label="Wayanad at a glance">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <i class="ri-landscape-line"></i>
+          <div>
+            <strong class="counter" data-target="2131">0</strong><span> km²</span>
+            <p>Total Area</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <i class="ri-group-line"></i>
+          <div>
+            <strong class="counter" data-target="817">0</strong><span>K+</span>
+            <p>Population</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <i class="ri-tree-line"></i>
+          <div>
+            <strong class="counter" data-target="37">0</strong><span>%</span>
+            <p>Forest Cover</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <i class="ri-camera-3-line"></i>
+          <div>
+            <strong class="counter" data-target="120">0</strong><span>+</span>
+            <p>Tourist Spots</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ TOP STORIES ═══════════════════════════ -->
+    <section id="news" class="section news-section">
+      <div class="container">
+        <div class="section-intro">
+          <span class="eyebrow">📰 Latest Updates</span>
+          <h2>Top Stories from Wayanad</h2>
+          <p>Hand-picked stories updated daily by our local reporters on the ground.</p>
+        </div>
+
+        <!-- Featured Article -->
+        <article class="featured-article reveal" id="featured-news">
+          <div class="featured-img">
+            <img src="./assets/images/wayanad_wildlife.png" alt="Elephant in Wayanad forest" loading="lazy"/>
+            <span class="featured-tag">FEATURED</span>
+          </div>
+          <div class="featured-body">
+            <span class="cat-badge cat-wildlife">Wildlife</span>
+            <h3><a href="#" id="featured-article-link">Elephant Population in Wayanad Reserve Rises to Record 600 — Forest Survey 2026</a></h3>
+            <p>The latest wildlife census by the Kerala Forest Department confirms a 12% rise in the elephant population in Wayanad Wildlife Sanctuary. Officials credit improved anti-poaching measures and community forest protection initiatives launched after the 2024 floods.</p>
+            <div class="article-meta">
+              <img src="./assets/images/wayanad_hero.png" alt="" class="author-avatar"/>
+              <div>
+                <strong>Ramesh Nair</strong>
+                <span>Senior Correspondent · Apr 24, 2026 · 4 min read</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-outline" id="featured-read-more">Read Full Story <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </article>
+
+        <!-- Ad Slot 1: Mid-News Banner -->
+        <div class="ad-placeholder reveal">
+          <span>SPONSORED ADVERTISEMENT</span>
+          <div class="ad-box">Your AdSense Code Here</div>
+        </div>
+
+        <!-- News Grid -->
+        <div class="news-grid">
+
+          <article class="news-card reveal" id="news-card-1">
+            <div class="nc-img nc-green">
+              <i class="ri-road-map-line"></i>
+              <span class="nc-cat">Infrastructure</span>
+            </div>
+            <div class="nc-body">
+              <h3><a href="#" id="news-link-1">New Ghat Road Alternative Receives Environmental Green Light</a></h3>
+              <p>The long-proposed alternative route connecting Kozhikode and Wayanad has cleared its final environmental hurdle, with construction projected to begin by June 2026.</p>
+              <footer class="nc-footer">
+                <span class="nc-time"><i class="ri-time-line"></i> 2 hours ago</span>
+                <a href="#" class="nc-read" id="news-read-1">Read <i class="ri-arrow-right-s-line"></i></a>
+              </footer>
+            </div>
+          </article>
+
+          <article class="news-card reveal" id="news-card-2">
+            <div class="nc-img nc-amber">
+              <i class="ri-sun-cloudy-line"></i>
+              <span class="nc-cat">Weather</span>
+            </div>
+            <div class="nc-body">
+              <h3><a href="#" id="news-link-2">Yellow Alert Issued — Heavy Rain Forecast Over Wayanad This Weekend</a></h3>
+              <p>The Indian Meteorological Department has put Wayanad on yellow alert as a low-pressure system forming in the Arabian Sea is expected to bring heavy rainfall from Saturday.</p>
+              <footer class="nc-footer">
+                <span class="nc-time"><i class="ri-time-line"></i> 5 hours ago</span>
+                <a href="#" class="nc-read" id="news-read-2">Read <i class="ri-arrow-right-s-line"></i></a>
+              </footer>
+            </div>
+          </article>
+
+          <article class="news-card reveal" id="news-card-3">
+            <div class="nc-img nc-orange">
+              <i class="ri-community-line"></i>
+              <span class="nc-cat">Rehabilitation</span>
+            </div>
+            <div class="nc-body">
+              <h3><a href="#" id="news-link-3">Mundakkai Landslide Victims Get New Permanent Houses Under State Scheme</a></h3>
+              <p>The first batch of 120 houses for families displaced by the 2024 Mundakkai–Chooralmala landslide has been handed over, with the remaining 300 expected by December.</p>
+              <footer class="nc-footer">
+                <span class="nc-time"><i class="ri-time-line"></i> Yesterday</span>
+                <a href="#" class="nc-read" id="news-read-3">Read <i class="ri-arrow-right-s-line"></i></a>
+              </footer>
+            </div>
+          </article>
+
+          <article class="news-card reveal" id="news-card-4">
+            <div class="nc-img nc-teal">
+              <i class="ri-mountain-line"></i>
+              <span class="nc-cat">Tourism</span>
+            </div>
+            <div class="nc-body">
+              <h3><a href="#" id="news-link-4">Chembra Peak Trek Reopens with Strict Eco-Tourism Guidelines from May 1st</a></h3>
+              <p>The iconic heart-shaped lake trek is set to reopen next week. New guidelines cap daily trekkers at 300 and mandate certified local guides to protect the fragile ecosystem.</p>
+              <footer class="nc-footer">
+                <span class="nc-time"><i class="ri-time-line"></i> 2 days ago</span>
+                <a href="#" class="nc-read" id="news-read-4">Read <i class="ri-arrow-right-s-line"></i></a>
+              </footer>
+            </div>
+          </article>
+
+          <article class="news-card reveal" id="news-card-5">
+            <div class="nc-img nc-purple">
+              <i class="ri-building-2-line"></i>
+              <span class="nc-cat">Development</span>
+            </div>
+            <div class="nc-body">
+              <h3><a href="#" id="news-link-5">Kalpetta Gets Its First Multi-Specialty Hospital Under PPP Model</a></h3>
+              <p>A 200-bed hospital built through public-private partnership will open in Kalpetta in August 2026, significantly reducing residents' dependence on hospitals in Kozhikode.</p>
+              <footer class="nc-footer">
+                <span class="nc-time"><i class="ri-time-line"></i> 3 days ago</span>
+                <a href="#" class="nc-read" id="news-read-5">Read <i class="ri-arrow-right-s-line"></i></a>
+              </footer>
+            </div>
+          </article>
+
+          <article class="news-card reveal" id="news-card-6">
+            <div class="nc-img nc-red">
+              <i class="ri-seedling-line"></i>
+              <span class="nc-cat">Agriculture</span>
+            </div>
+            <div class="nc-body">
+              <h3><a href="#" id="news-link-6">Organic Pepper from Wayanad Fetches Rs 1,200/kg at GI-Tagged Auction</a></h3>
+              <p>The Geographical Indication tag for Wayanad pepper continues to yield results. This year's harvest fetched record prices at the Kochi spice auction, benefiting 4,000+ farmers.</p>
+              <footer class="nc-footer">
+                <span class="nc-time"><i class="ri-time-line"></i> 4 days ago</span>
+                <a href="#" class="nc-read" id="news-read-6">Read <i class="ri-arrow-right-s-line"></i></a>
+              </footer>
+            </div>
+          </article>
+
+        </div><!-- /.news-grid -->
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ DESTINATIONS ═══════════════════════════ -->
+    <section id="destinations" class="section destinations-section">
+      <div class="container">
+        <div class="section-intro">
+          <span class="eyebrow">🌿 Explore</span>
+          <h2>Must-Visit Destinations</h2>
+          <p>From ancient caves to heart-shaped lakes — Wayanad is a traveller's paradise.</p>
+        </div>
+
+        <div class="dest-grid">
+
+          <div class="dest-card dest-large reveal" id="dest-card-waterfall">
+            <img src="./assets/images/wayanad_waterfall.png" alt="Soochipara Waterfall Wayanad" loading="lazy"/>
+            <div class="dest-overlay">
+              <span class="dest-tag">Nature</span>
+              <h3>Soochipara Waterfall</h3>
+              <p>A 200-ft cascade hidden in dense Sentinel Rock forest — perfect for trekking and swimming.</p>
+              <a href="#subscribe" class="btn btn-white-sm" id="dest-waterfall-plan">Plan Your Visit</a>
+            </div>
+          </div>
+
+          <div class="dest-card reveal" id="dest-card-tribe">
+            <img src="./assets/images/wayanad_tribe.png" alt="Adivasi Tribal Culture Wayanad" loading="lazy"/>
+            <div class="dest-overlay">
+              <span class="dest-tag">Culture</span>
+              <h3>Tribal Heritage Village</h3>
+              <p>Immerse yourself in the living traditions of the Adivasi communities of Wayanad.</p>
+              <a href="#subscribe" class="btn btn-white-sm" id="dest-tribe-plan">Plan Your Visit</a>
+            </div>
+          </div>
+
+          <div class="dest-card reveal" id="dest-card-wildlife">
+            <img src="./assets/images/wayanad_wildlife.png" alt="Elephant in Wayanad forest" loading="lazy"/>
+            <div class="dest-overlay">
+              <span class="dest-tag">Wildlife</span>
+              <h3>Muthanga Wildlife Sanctuary</h3>
+              <p>Home to 600+ wild elephants, tigers, leopards, and rare birds across 344 sq. km of reserve forest.</p>
+              <a href="#subscribe" class="btn btn-white-sm" id="dest-wildlife-plan">Plan Your Visit</a>
+            </div>
+          </div>
+
+          <div class="dest-card reveal" id="dest-card-chembra" style="background: linear-gradient(135deg,#064e3b,#059669)">
+            <div class="dest-text-card">
+              <i class="ri-ancient-gate-fill" style="font-size:3rem;color:#10b981"></i>
+              <h3>Edakkal Caves</h3>
+              <p>Witness prehistoric rock carvings dating back to the Neolithic age on Ambukuthi Hills.</p>
+              <ul>
+                <li><i class="ri-check-double-line"></i> Rare archaeological site</li>
+                <li><i class="ri-check-double-line"></i> 1,200m above sea level</li>
+                <li><i class="ri-check-double-line"></i> Closed on Mondays</li>
+              </ul>
+              <a href="#subscribe" class="btn btn-green-sm" id="dest-edakkal-plan">Explore History</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ WEATHER WIDGET ═══════════════════════════ -->
+    <section id="weather" class="section weather-section">
+      <div class="container">
+        <div class="weather-card reveal" id="weather-widget">
+          <div class="weather-left">
+            <span class="eyebrow-light">📍 Live Weather</span>
+            <h2>Kalpetta, Wayanad</h2>
+            <div class="weather-main">
+              <div class="weather-temp">
+                <span class="temp-num" id="weather-temp">--</span>
+                <span class="temp-unit">°C</span>
+              </div>
+              <div class="weather-icon-wrap">
+                <i class="ri-cloudy-2-fill weather-icon-big" id="weather-icon"></i>
+                <p id="weather-desc">Fetching live weather...</p>
+              </div>
+            </div>
+            <div class="weather-details">
+              <div class="wd-item"><i class="ri-drop-line"></i> <span>Humidity: <strong>82%</strong></span></div>
+              <div class="wd-item"><i class="ri-wind-line"></i> <span>Wind: <strong>14 km/h</strong></span></div>
+              <div class="wd-item"><i class="ri-eye-line"></i> <span>Visibility: <strong>8 km</strong></span></div>
+            </div>
+          </div>
+          <div class="weather-right">
+            <h4>5-Day Forecast</h4>
+            <div class="forecast-list" id="forecastList">
+              <div class="forecast-day"><span>Fri</span><i class="ri-sun-cloudy-line"></i><span>27° / 21°</span></div>
+              <div class="forecast-day"><span>Sat</span><i class="ri-heavy-showers-line"></i><span>24° / 19°</span></div>
+              <div class="forecast-day"><span>Sun</span><i class="ri-thunderstorms-line"></i><span>22° / 18°</span></div>
+              <div class="forecast-day"><span>Mon</span><i class="ri-drizzle-line"></i><span>25° / 20°</span></div>
+              <div class="forecast-day"><span>Tue</span><i class="ri-sun-line"></i><span>28° / 22°</span></div>
+            </div>
+            <div class="weather-alert-box">
+              <i class="ri-alert-line"></i>
+              <span>Yellow Alert active – Heavy rainfall warning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ SUBSCRIBE / AD CONVERSION ═══════════════════════════ -->
+    <section id="subscribe" class="subscribe-section">
+      <div class="sub-bg" aria-hidden="true"></div>
+      <div class="container sub-inner">
+        <div class="sub-icon" aria-hidden="true"><i class="ri-mail-send-fill"></i></div>
+        <span class="eyebrow-light">Free Daily Digest</span>
+        <h2>Never Miss a Wayanad Story</h2>
+        <p>Join <strong>50,000+</strong> readers who get our curated daily digest — news, weather alerts, tourism tips, and more.</p>
+
+        <form class="sub-form" id="subscribeForm" novalidate>
+          <div class="sub-fields">
+            <div class="field-wrap">
+              <i class="ri-user-3-line"></i>
+              <input type="text" id="sub-name" name="name" placeholder="Your Name" autocomplete="name" required/>
+            </div>
+            <div class="field-wrap">
+              <i class="ri-mail-line"></i>
+              <input type="email" id="sub-email" name="email" placeholder="Your Email Address" autocomplete="email" required/>
+            </div>
+            <button type="submit" class="btn btn-green" id="sub-btn">
+              <i class="ri-send-plane-fill"></i> Subscribe Now
+            </button>
+          </div>
+          <p class="sub-disclaimer">No spam, ever. Unsubscribe anytime. 100% Free.</p>
+        </form>
+        <div class="sub-message" id="subMessage" role="alert" aria-live="polite"></div>
+
+        <div class="trust-badges">
+          <span><i class="ri-shield-check-fill"></i> GDPR Compliant</span>
+          <span><i class="ri-lock-fill"></i> Secure</span>
+          <span><i class="ri-star-fill"></i> 4.9★ Rated</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ SUPPORT / DONATION ═══════════════════════════ -->
+    <section id="support" class="section support-section">
+      <div class="container">
+        <div class="support-grid">
+          <div class="support-content reveal">
+            <span class="eyebrow">🤝 Support Wayanad</span>
+            <h2>Help Us Keep Wayanad's Stories Alive</h2>
+            <p>Wayanad Today is a community-driven platform. Your contributions help us maintain our independent reporting and support local rehabilitation efforts for families affected by natural disasters.</p>
+            <div class="support-features">
+              <div class="sf-item"><i class="ri-heart-pulse-line"></i> <span>Supports Landslide Rehabilitation</span></div>
+              <div class="sf-item"><i class="ri-broadcast-line"></i> <span>Funds Local Independent News</span></div>
+              <div class="sf-item"><i class="ri-shield-user-line"></i> <span>100% Direct Impact</span></div>
+            </div>
+          </div>
+          <div class="support-card-wrap reveal">
+            <div class="qr-card">
+              <div class="qr-header">
+                <i class="ri-qr-code-line"></i>
+                <span>Scan to Donate</span>
+              </div>
+              <img src="./assets/images/donation_qr.png" alt="Donate via UPI QR Code" class="qr-img"/>
+              <p class="qr-footer">Accepts all UPI Apps (GPay, PhonePe, etc.)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo" id="footer-logo">
+            <div class="logo-icon"><i class="ri-leaf-fill"></i></div>
+            <div class="logo-text">Wayanad<span>Today</span></div>
+          </a>
+          <p>Delivering authentic news, breathtaking tourism stories, and cultural heritage from the lush Western Ghats of Kerala.</p>
+          <div class="social-row">
+            <a href="#" aria-label="Facebook" id="social-facebook"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="#" aria-label="Instagram" id="social-instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" aria-label="YouTube" id="social-youtube"><i class="ri-youtube-fill"></i></a>
+            <a href="#" aria-label="WhatsApp" id="social-whatsapp"><i class="ri-whatsapp-line"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#news" id="footer-local">Local News</a></li>
+            <li><a href="#news" id="footer-wildlife">Wildlife</a></li>
+            <li><a href="#news" id="footer-tourism">Tourism</a></li>
+            <li><a href="#news" id="footer-agri">Agriculture</a></li>
+            <li><a href="#weather" id="footer-weather">Weather</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Top Destinations</h4>
+          <ul>
+            <li><a href="#destinations" id="footer-chembra">Chembra Peak</a></li>
+            <li><a href="#destinations" id="footer-edakkal">Edakkal Caves</a></li>
+            <li><a href="#destinations" id="footer-soochipara">Soochipara Falls</a></li>
+            <li><a href="#destinations" id="footer-muthanga">Muthanga</a></li>
+            <li><a href="#destinations" id="footer-banasura">Banasura Sagar Dam</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Ad Choices</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h4>Official Info</h4>
+          <p><i class="ri-mail-line"></i> info@dtpcwayanad.com</p>
+          <p><i class="ri-phone-line"></i> +91 4936 202134</p>
+          <p><i class="ri-whatsapp-line"></i> +91 94460 72134 (DTPC)</p>
+          <p><i class="ri-map-pin-2-line"></i> Collectorate, Kalpetta, Wayanad</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Wayanad Today. All rights reserved. | <a href="#" id="footer-privacy">Privacy Policy</a> | <a href="#" id="footer-terms">Terms of Use</a></p>
+        <p class="footer-note">Optimised for Google Ads · Structured Data Enabled · SEO Ready</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-top" id="backTop" aria-label="Scroll back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
