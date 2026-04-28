@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
       iconEl.className   = `${info.icon} weather-icon-big`;
 
       if (forecastEl) {
-        forecastEl.innerHTML = '';
+        let forecastHTML = '';
         data.daily.time.slice(1, 6).forEach((date, i) => {
           const dayName = new Date(date).toLocaleDateString('en-US', { weekday: 'short' });
           const dc      = data.daily.weather_code[i + 1];
@@ -154,16 +154,18 @@ document.addEventListener('DOMContentLoaded', () => {
           const min     = Math.round(data.daily.temperature_2m_min[i + 1]);
           const ico     = (weatherMap[dc] || { icon: 'ri-sun-cloudy-line' }).icon;
 
-          forecastEl.innerHTML += `
+          forecastHTML += `
             <div class="forecast-day">
               <span>${dayName}</span>
               <i class="${ico}"></i>
               <span>${max}° / ${min}°</span>
             </div>`;
         });
+        forecastEl.innerHTML = forecastHTML;
       }
     } catch (err) {
       console.error('Weather fetch failed:', err);
+      if (descEl) descEl.textContent = 'Weather unavailable';
     }
   };
 
