@@ -101,6 +101,7 @@ ul { list-style: none; }
     align-items: center;
     z-index: 1000;
     transition: var(--transition);
+    margin-bottom: -80px;
 }
 
 .header.scrolled {
@@ -1374,7 +1375,7 @@ ul { list-style: none; }
 /* ── Responsive: 768px ── */
 @media (max-width: 768px) {
     .hamburger { display: flex; }
-    .header { height: 64px; }
+    .header { height: 64px; margin-bottom: -64px; }
 
     .hero { height: auto; padding: 90px 0 60px; }
     .hero-heading { font-size: 2.5rem; }
